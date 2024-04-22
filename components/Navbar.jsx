@@ -2,9 +2,9 @@ import React from 'react'
 
 function Navbar() {
     return (
-        <div className="navbar fixed z-50 bg-base-200">
+        <div className="navbar fixed z-50 bg-base-100">
             <div className="flex-1">
-                <a className="btn btn-ghost text-xl">daisyUI</a>
+                <a className="btn btn-ghost text-xl">LUSCIOUS</a>
             </div>
             <div className="flex-none">
                 <ul className="menu menu-horizontal px-1">

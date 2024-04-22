@@ -2,7 +2,7 @@ import React from 'react'
 
 function DishOfTheDay() {
     return (
-        <div className=" hero min-h-screen bg-base-300">
+        <div className=" hero min-h-screen bg-base-300 w-10/12 mx-auto my-20 rounded-2xl shadow-xl">
             <div className="hero-content flex-col lg:flex-row">
                 <div className="mockup-phone">
                     <div className="camera"></div>
