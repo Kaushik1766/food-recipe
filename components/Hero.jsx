@@ -1,4 +1,4 @@
-'use client'
+// 'use client'
 import React, { useEffect } from 'react'
 import bgImg0 from '../app/assets/Hero/2151205182.jpg'
 import bgImg1 from '@/public/Home/slider1.webp'
