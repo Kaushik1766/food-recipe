@@ -1,18 +1,27 @@
-import React from 'react'
-import backgroundImage from '../app/assets/Hero/2151205182.jpg'
+'use client'
+import React, { useEffect } from 'react'
+import bgImg0 from '../app/assets/Hero/2151205182.jpg'
+import bgImg1 from '@/public/Home/slider1.webp'
+import bgImg2 from '@/public/Home/slider2.webp'
+import bgImg3 from '@/public/Home/slider3.webp'
+import bgImg4 from '@/public/Home/slider4.webp'
+import bgImg5 from '@/public/Home/slider5.webp'
 
 
 export default function Hero() {
+  const bgImgs = [
+    bgImg0, bgImg1, bgImg2, bgImg3, bgImg4, bgImg5
+  ]
   return (
-    <div className="hero min-h-screen" style={{backgroundImage: `url(${backgroundImage.src})`}}>
-  <div className="hero-overlay bg-opacity-60"></div>
-  <div className="hero-content text-center text-neutral-content">
-    <div className="max-w-md">
-      <h1 className="mb-5 text-5xl font-bold">Namaste!</h1>
-      <p className="mb-5 ">Get all the traditional recipies from all around the India.</p>
-      <button className="btn btn-primary">Get Started</button>
+    <div className="hero min-h-screen" style={{ backgroundImage: `url(${bgImgs[Math.ceil(Math.random() * bgImgs.length) - 1].src})` }}>
+      {/* <div className="hero-overlay bg-opacity-60"></div> */}
+      <div className=" h-full w-full backdrop-blur-sm bg-black/30 text-center text-neutral-content flex items-center justify-center">
+        <div className="max-w-md">
+          <h1 className="mb-2 text-5xl font-bold">Namaste!</h1>
+          <p className="mb-5 ">"Discover the rich flavors and aromatic spices of authentic Indian cuisine—right in your own kitchen!"</p>
+          <button className="btn btn-primary">Get Started</button>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
   )
 }

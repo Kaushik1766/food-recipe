@@ -1,26 +1,31 @@
+'use client'
 import React from 'react'
+import { Lobster } from 'next/font/google'
+
+const pacifico = Lobster({
+    subsets: ["latin"],
+    weight: ['400']
+});
+
 
 function Navbar() {
+    function changeTheme(theme) {
+        let root = document.getElementById('main')
+        root.setAttribute('data-theme', theme)
+    }
     return (
         <div className="navbar fixed z-50 bg-base-100">
             <div className="flex-1">
-                <a className="btn btn-ghost text-xl">LUSCIOUS</a>
+                <a className={`btn btn-ghost text-3xl ${pacifico.className}`}>Luscious</a>
             </div>
             <div className="flex-none">
-                <ul className="menu menu-horizontal px-1">
-                    <li><a>Link</a></li>
-                    <li>
-                        <details>
-                            <summary>
-                                Parent
-                            </summary>
-                            <ul className="p-2 bg-base-100 rounded-t-none">
-                                <li><a>Link 1</a></li>
-                                <li><a>Link 2</a></li>
-                            </ul>
-                        </details>
-                    </li>
-                </ul>
+                <div className="dropdown">
+                    <div tabIndex={0} role="button" className="btn btn-ghost mr-8">Theme</div>
+                    <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box">
+                        <li className='p-2 cursor-pointer btn btn-ghost' onClick={() => changeTheme('garden')}>Light Mode</li>
+                        <li className='p-2 cursor-pointer btn btn-ghost' onClick={() => changeTheme('dim')}>Dark Mode</li>
+                    </ul>
+                </div>
             </div>
         </div>
     )

@@ -33,12 +33,12 @@ function Regions() {
                     {
                         regions.map((item, idx) => {
                             return <div className="card rounded-2xl overflow-hidden w-96 bg-base-100 shadow-xl image-full mx-auto" key={idx}>
-                                <figure><img src={item.link} alt="Shoes" /></figure>
+                                <figure className='blur-[3px]'><img src={item.link} alt="Shoes" /></figure>
                                 <div className="card-body">
                                     <h2 className="card-title">{item.title}</h2>
                                     <p>{item.content}</p>
                                     <div className="card-actions justify-end">
-                                        <button className="btn btn-primary">Buy Now</button>
+                                        <button className="btn btn-primary">Learn More</button>
                                     </div>
                                 </div>
                             </div>

@@ -8,13 +8,18 @@ function DishOfTheDay() {
                     <div className="camera"></div>
                     <div className="display">
                         <div className="artboard artboard-demo phone-1">
-                            <img src="https://assets.vogue.in/photos/5ebe697e1e1bf8da0f205095/2:3/w_2560%2Cc_limit/lassi%2520buttermilk%2520chaas%2520recipes%2520for%2520home.jpg" className='h-full' alt="" />
+                            <div className='h-full w-full bg-center bg-cover bg-no-repeat' style={{
+                                backgroundImage: `url(https://assets.bonappetit.com/photos/58c94cc584ebdb0ec55e3656/1:1/w_2560%2Cc_limit/frozen-rum-mango-lassi.jpg)`
+                            }}>
+
+                            </div>
+                            {/* <img src="https://assets.vogue.in/photos/5ebe697e1e1bf8da0f205095/2:3/w_2560%2Cc_limit/lassi%2520buttermilk%2520chaas%2520recipes%2520for%2520home.jpg" className='h-full' alt="" /> */}
                         </div>
                     </div>
                 </div>
                 <div className='lg:w-2/3'>
-                    <h1 className="text-5xl font-bold">Dish of the Day</h1>
-                    <p className="py-6">Lassi is a traditional Indian beverage made from yogurt or buttermilk, enjoyed across the Indian subcontinent. Typically served chilled, lassi offers a refreshing and creamy texture that balances sweet and savory flavors. The drink can be infused with various ingredients, such as fruit, spices, or herbs. A sweet lassi might be blended with sugar, cardamom, and rosewater, while a savory version, known as salted lassi, often includes cumin, coriander, and salt. Some lassis are even made with fruit like mango, creating a deliciously tangy and sweet treat. It&apos;s a popular choice to cool down in the summer heat or to complement spicy foods. The versatility of lassi makes it a cherished part of Indian cuisine, appealing to a wide range of palates.</p>
+                    <h1 className="text-5xl font-bold">Dish of the Day: Mango Lassi</h1>
+                    <p className="py-6">Mango lassi is a delightful and refreshing Indian beverage that combines the creamy texture of yogurt with the sweet and tangy flavor of ripe mangoes. This popular drink is often served chilled, making it a perfect choice to beat the heat on a hot day or to accompany spicy dishes. The key ingredients include fresh or canned mango pulp, yogurt, sugar, and sometimes a hint of cardamom or rosewater for added aroma. Blended to a smooth consistency, mango lassi has a vibrant orange color and a taste that balances the creaminess of yogurt with the tropical sweetness of mangoes. Its versatility and appealing flavor make it a favorite at Indian restaurants and a staple during mango season.</p>
                 </div>
             </div>
         </div>
