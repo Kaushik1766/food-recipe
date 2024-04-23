@@ -18,7 +18,7 @@ export default function Hero() {
       <div className=" h-full w-full backdrop-blur-sm bg-black/30 text-center text-neutral-content flex items-center justify-center">
         <div className="max-w-md">
           <h1 className="mb-2 text-5xl font-bold">Namaste!</h1>
-          <p className="mb-5 ">"Discover the rich flavors and aromatic spices of authentic Indian cuisine—right in your own kitchen!"</p>
+          <p className="mb-5 ">&quot;Discover the rich flavors and aromatic spices of authentic Indian cuisine—right in your own kitchen!&quot;</p>
           <button className="btn btn-primary">Get Started</button>
         </div>
       </div>

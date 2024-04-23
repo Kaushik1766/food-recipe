@@ -28,7 +28,7 @@ function Regions() {
     return (
         <>
             <div className='w-4/5 mx-auto bg-base-200 shadow-xl p-10 rounded-2xl my-20'>
-                <h1 className='text-center text-5xl font-bold w-full'>Dishes around India</h1>
+                <h1 className='text-center text-5xl font-bold w-full'>Dishes by region</h1>
                 <div className='grid grid-cols-2 w-[50rem] my-10 mx-auto items-center gap-10'>
                     {
                         regions.map((item, idx) => {
