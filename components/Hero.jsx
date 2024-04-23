@@ -13,7 +13,7 @@ export default function Hero() {
     bgImg0, bgImg1, bgImg2, bgImg3, bgImg4, bgImg5
   ]
   const [backgroundImage, setBackGroundImage] = useState()
-  useEffect((item, idx) => {
+  useEffect(() => {
     setBackGroundImage(bgImgs[Math.ceil(Math.random() * bgImgs.length) - 1].src)
   })
   return (
