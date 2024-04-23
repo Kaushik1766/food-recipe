@@ -1,5 +1,5 @@
 import React from "react";
-import { recipe } from "@/app/data/northIndian/data";
+import { recipe } from "@/app/data/data";
 import Link from "next/link";
 
 function page() {
@@ -9,7 +9,7 @@ function page() {
 
       <h1 className="text-3xl font-semibold  mx-auto">North Indian Cuisines</h1>
 
-      {recipe.map((food, idx) => {
+      {recipe['north'].map((food, idx) => {
         if (idx % 2 == 0) {
           return (
             <div
@@ -41,7 +41,7 @@ function page() {
               key={idx}
               className="card rounded-2xl overflow-hidden lg:card-side w-10/12 mx-auto bg-base-200 shadow-xl mt-3"
             >
-             
+
 
               <div className="card-body w-full">
                 <h2 className="card-title">{food.title}</h2>
