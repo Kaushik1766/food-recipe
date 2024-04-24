@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
 import { Lobster } from 'next/font/google'
+import Link from 'next/link';
 
 const pacifico = Lobster({
     subsets: ["latin"],
@@ -16,7 +17,7 @@ function Navbar() {
     return (
         <div className="navbar fixed z-50 bg-base-100">
             <div className="flex-1">
-                <a className={`btn btn-ghost text-3xl ${pacifico.className}`}>Luscious</a>
+                <a className={`btn btn-ghost text-3xl ${pacifico.className}`}><Link href="/">Luscious</Link></a>
             </div>
             <div className="flex-none">
                 <div className="dropdown">
