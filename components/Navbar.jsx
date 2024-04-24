@@ -17,7 +17,7 @@ function Navbar() {
     return (
         <div className="navbar fixed z-50 bg-base-100">
             <div className="flex-1">
-                <a className={`btn btn-ghost text-3xl ${pacifico.className}`}><Link href="/">Luscious</Link></a>
+                <Link href={'/'} className={`btn btn-ghost text-3xl ${pacifico.className}`}>Luscious</Link>
             </div>
             <div className="flex-none">
                 <div className="dropdown">
